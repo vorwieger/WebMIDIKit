@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "WebMIDIKit",
+    platforms: [
+        .macOS(.v10_13), .iOS(.v12),
+    ],
     products: [
         .library(
             name: "WebMIDIKit",
@@ -19,8 +22,5 @@ let package = Package(
         .testTarget(
             name: "WebMIDIKitTests",
             dependencies: []),
-    ],
-    platforms: [
-        .macOS(.v10_13), .iOS(.v12),
     ]
 )
