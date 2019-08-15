@@ -19,5 +19,8 @@ let package = Package(
         .testTarget(
             name: "WebMIDIKitTests",
             dependencies: []),
+    ],
+    platforms: [
+        .macOS(.v10_13), .iOS(.v12),
     ]
 )
